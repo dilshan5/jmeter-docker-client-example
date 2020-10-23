@@ -4,7 +4,10 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
-
+test/report/**
+test/basic/test-plan.jtl
+test/basic/jmeter.log
+jmeter.log
 
 ### STS ###
 .apt_generated
