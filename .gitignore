@@ -4,9 +4,9 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
-test/report/**
-test/basic/test-plan.jtl
-test/basic/jmeter.log
+tests/report/**
+tests/basic/test-plan.jtl
+tests/basic/jmeter.log
 jmeter.log
 
 ### STS ###

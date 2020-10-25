@@ -2,8 +2,11 @@
 #
 # Run JMeter Docker image with options
 
+#this should be same as jmeter-docker tags in https://hub.docker.com/r/dilshan7fdo/jmeter-docker/tags OR
+#if you use ./build.sh ;then use the same JMeter version
+JMeter_version="5.3"
+
 NAME="jmeter"
-JMeter_version="latest"
 IMAGE="dilshan7fdo/jmeter-docker:${JMeter_version}"
 
 # Finally run

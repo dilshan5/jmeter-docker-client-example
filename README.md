@@ -12,8 +12,23 @@ This is an example for [dilshan7fdo/jmeter-docker](https://hub.docker.com/r/dils
    git clone https://github.com/dilshan5/jmeter-docker-client-example.git
    cd jmeter-docker-client-example
    ```
+2. Run the Build script to download docker image based on your requirements(e.g: install JMeter plugins which you want). <b>You can skip this step if you prefer to use default image settings</b>:
 
-1. Run the test script:
+   ```
+   ./build.sh
+   ```
+
+   If you view this file, the <strong>docker build</strong> command within the script is for a specific version of JMeter and JMeter plugins.
+   
+   If you view the Dockerfile in the repository, notice the `JMETER_VERSION` specified is the same as the one in the build.sh script. The FROM keyword specifies the Alpine operating system, which is very small (less of an attack surface). Also, default JMeter plugins are used.
+   
+   At the bottom of the Dockerfile is the <strong>entrypoint.sh</strong> file. If you view it, that's where JVM memory settings are specified for <strong>jmeter</strong> before it is invoked. PROTIP: Such settings need to be adjusted for tests of more complexity.
+
+   The last line in the response should be:
+   
+   <tt>Successfully tagged dilshan7fdo/jmeter-docker:5.3</tt>
+   
+3. Run the test script:
 
    ```
    ./test.sh
@@ -28,7 +43,7 @@ This is an example for [dilshan7fdo/jmeter-docker](https://hub.docker.com/r/dils
    See HTML test report in tests/basic/report/index.html
    </pre>
 
-1. Switch to your machine's Folder program and navigate to the folder containing files which replaces files cloned in from GitHub:
+4. Switch to your machine's Folder program and navigate to the folder containing files which replaces files cloned in from GitHub:
    
    ```
    cd tests/basic
@@ -42,7 +57,7 @@ This is an example for [dilshan7fdo/jmeter-docker](https://hub.docker.com/r/dils
    * test-plan.jtl containing statistics from the run displayed by the index.html file.
    
    
-1. Navigate into the <strong>report</strong> folder and open the <strong>index.html</strong> file to pop up a browser window displaying the run report. On a Mac Terminal:
+5. Navigate into the <strong>report</strong> folder and open the <strong>index.html</strong> file to pop up a browser window displaying the run report. On a Mac Terminal:
    
    ```
    cd report
