@@ -1,5 +1,4 @@
-[![Docker Build](https://img.shields.io/docker/automated/justb4/jmeter.svg)](https://hub.docker.com/r/justb4/jmeter)
-
+[![Docker Build](images/jmeter.svg)](https://hub.docker.com/r/dilshan7fdo/jmeter-docker)
 # jmeter-docker-example
 
 This is an example for [dilshan7fdo/jmeter-docker](https://hub.docker.com/r/dilshan7fdo/jmeter-docker) image.
