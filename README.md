@@ -3,6 +3,10 @@
 
 This is an example for [dilshan7fdo/jmeter-docker](https://hub.docker.com/r/dilshan7fdo/jmeter-docker) image.
 
+## Prerequisites:
+
+An operating system compatible with Docker, See [Docker Installation](https://docs.docker.com/docker-for-windows/install/) for more information.
+
 ## Do it for real: detailed build/run/test
 
 1. In a Terminal/Command session, install Git, navigate/make a folder, then:
